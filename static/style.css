@@ -1,0 +1,237 @@
+body{
+    background-color: rgb(228, 238, 235);
+    
+}
+
+
+ul li{
+   
+   list-style: none;
+}
+
+
+.sideNav{
+position: absolute;
+width: 19%;
+height: 151%;
+left: 0%;
+top: 0%;
+bottom: 0px;
+background-color: whitesmoke;
+}
+
+#patients{
+    position: absolute;
+width: 12%;
+height: 23%;
+left: 21%;
+top: 6%;
+background-color: whitesmoke;
+
+
+}
+
+#actions{
+    position: absolute;
+    width: 12%;
+    height: 23%;
+left: 35%;
+top: 6%;
+background-color: whitesmoke;
+
+}
+
+#notifications{
+    position: absolute;
+    width: 12%;
+    height: 23%;
+left: 49%;
+top: 6%;
+background-color: whitesmoke;
+
+}
+
+#reports{
+    position: absolute;
+    width: 12%;
+    height: 23%;
+left: 63%;
+top: 6%;
+background-color: whitesmoke;
+
+
+}
+
+
+.calender{
+    position: absolute;
+width: 20%;
+height: 50%;
+right: 3%;
+top: 6%;
+background-color: whitesmoke;
+}
+
+.sales{
+    position: absolute;
+width: 54%;
+height: 67%;
+/* left: 288px; */
+right: 25%;
+top: 33%;
+background-color: whitesmoke;
+
+}
+
+.sales h3 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 30px;
+margin-left: 3%;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.15px;
+
+/* Black / High Emphasis */
+
+color: rgba(0, 0, 0, 0.87);
+
+}
+
+.sales #dataAPI{
+    border: rgb(131, 131, 131) 1px solid;
+  
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: -2%;
+    margin-bottom: 1%;
+    background-color: rgb(252, 249, 249);
+}
+
+.activity{
+    position: absolute;
+width:20%;
+height: 40%;
+/* left: 1040px; */
+right: 3%;
+top: 60%;
+background-color: whitesmoke;
+}
+
+.newPatientsRequests{
+    position: absolute;
+width: 26%;
+height: 45%;
+left: 21%;
+top: 105%;
+background-color: whitesmoke;
+}
+
+.topStates{
+    position: absolute;
+width: 46.6%;
+height: 45%;
+right: 3%;
+top: 105%;
+background-color: whitesmoke;
+}
+
+
+ 
+  
+
+.container{
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 15%;
+    background-color: rgb(70, 7, 121);
+    width: 30%;
+    color: whitesmoke;
+    border-radius: 5%;
+
+}
+
+#signup{
+    top: 5%;
+}
+/* .container .submitBtn{
+    position: absolute;
+    left: 30%;
+} */
+
+#login{
+    top: 5%;
+    height: 90%;
+
+   
+  
+}
+
+#formLogin{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+.register{
+    position: absolute;
+    top: 70%;
+    left: 32%;
+}
+
+.register a{
+    text-decoration: none;
+    color: rgb(16, 8, 133);
+    font-weight: bold;
+    border-radius: 7%;
+    font-size: 0.9rem;
+    background-color: rgb(252, 252, 252);
+}
+
+form #fname {
+ margin-top: 5%;
+ margin-bottom: 5%;
+   
+}
+
+
+form #lname {
+    margin-top: 5%;
+    margin-bottom: 5%;
+      
+   }
+   
+   form #Uname {
+    margin-top: 5%;
+    margin-bottom: 5%;
+      
+   }
+   
+   form #Password {
+    margin-top: 5%;
+    margin-bottom: 5%;
+      
+   }
+   form #email {
+    margin-top: 5%;
+    margin-bottom: 5%;
+      
+   }
+   
+   form .submitBtn {
+    margin-top: 5%;
+    margin-bottom: 5%;
+      
+   }
+   
+
+
+
+
+
+
+
+

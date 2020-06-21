@@ -14,11 +14,9 @@ def redirection():
     return redirect('/LandingPage')
 
 
-@app.route('/LandingPage', method=['GET', 'POST'])
+@app.route('/LandingPage')
 def Landing():
-    if request.method == 'POST':
-        pass
-    return render_template('patientdashboard.html')
+    return render_template('LandingPage.html')
 
 
 @app.route('/patientdashboard', methods=['GET', 'POST'])

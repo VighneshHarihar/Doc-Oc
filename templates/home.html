@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Newsify</title>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link href="../../../Movie-Monk/static/styles/styles.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <h1 class="heading1">Newsify</h1>
+    <section id="form" class="try">
+    <form method="POST" action="/result" >
+        <input type="text" name="newsTitle" placeholder=" Search by news title" ><br><br>
+
+        <input type="submit" value="Look Up" > </form>
+</section>
+<script> ScrollReveal().reveal('.try'); ScrollReveal().reveal('.heading1');</script>
+
+<hr class="new1">
+<br>
+
+
+<!--india-->
+<br><br>
+<div class="subhead"> <h2>Covid-19 Cases in India</h2></div>
+    <div class="wrapper">
+<div class="box_wrapper">
+    <div class="box">
+      <h2>Confirmed Cases</h2>
+      <p>{{ cases }}</p>
+
+    </div>
+
+    <div class="box">
+      <h2>Active</h2>
+      <p>{{ active }}</p>
+
+    </div>
+    <div class="box">
+      <h2>Recovered</h2>
+      <p>{{ recovered }}</p>
+    </div>
+    <div class="box">
+      <h2>Total Deaths</h2>
+      <p>{{ deaths }}</p>
+    </div>
+
+  </div>
+ </div>
+<br><br><br><br><br><br><br><br>
+ <div class="try">
+ <form method="post" action="/visualization">
+     <input type="submit" value="Visualize">
+ </form>
+ </div>
+</body>
+</html>
+

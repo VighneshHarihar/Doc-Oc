@@ -11,11 +11,20 @@ texting = "app"
 
 @app.route('/')
 def redirection():
-    return redirect('/patientdashboard')
+    return redirect('/LandingPage')
+
+
+@app.route('/LandingPage', method=['GET', 'POST'])
+def Landing():
+    if request.method == 'POST':
+        pass
+    return render_template('patientdashboard.html')
 
 
 @app.route('/patientdashboard', methods=['GET', 'POST'])
 def patientdashboard():
+    if request.method == 'POST':
+        pass
     return render_template('Patientdashboard.html')
 
 
@@ -46,9 +55,9 @@ def doctordashboard():
 
 @app.route('/doctordashboard2', methods=['GET', 'POST'])
 def doctordashboard2():
-    if request.method=='POST':
+    if request.method == 'POST':
         showQuery = request.form['showQuery']
-    return render_template('DoctorDashboard2.html',texting=texting)
+    return render_template('DoctorDashboard2.html', texting=texting)
 
 
 if __name__ == "__main__":

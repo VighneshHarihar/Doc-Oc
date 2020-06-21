@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doctor-Dashboard</title>
+    <title>PatientDashboard</title>
 
     <link
       rel="stylesheet"
@@ -14,14 +14,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
     />
   </head>
-
   <body>
     <!-- START NAV -->
     <nav class="navbar is-white">
       <div class="container">
         <div class="navbar-brand">
           <a class="navbar-item brand-text" href="../index.html">
-            Dr.Vighnesh Harihar
+            Vighnesh Harihar
           </a>
           <div class="navbar-burger burger" data-target="navMenu">
             <span></span>
@@ -75,7 +74,7 @@
             <div class="hero-body">
               <div class="container">
                 <h1 class="title">
-                  Hello, Dr.Vighnesh.
+                  Hello, Vighnesh.
                 </h1>
                 <h2 class="subtitle">
                   I hope you are having a great day!
@@ -83,43 +82,43 @@
               </div>
             </div>
           </section>
-
+          <section class="info-tiles">
+            <div class="tile is-ancestor has-text-centered">
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <a href="#" class="title is-link">Price Prediction</a>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <a href="#" class="title is-link">Audio Report</a>
+                </article>
+              </div>
+            </div>
+          </section>
           <div class="columns">
             <div class="column">
-              <!-- for Price prediction -->
-
+              <!-- for Audio Report -->
               <div class="card events-card">
                 <header class="card-header">
                   <p class="card-header-title">
-                    Patient's Audio Records
+                    Audio Report
                   </p>
                 </header>
                 <section class="section">
-                  <!-- Write here -->
-                  <article class="message is-info">
-                    <div class="message-header">
-                      <p>New Audio Report</p>
-                    </div>
+                  <div class="block">
+                    <span class="icon is-large">
+                      <form method="POST" action="/patientdashboard1">
+                        <button
+                          name="Micro"
+                          type="submit"
+                          class="buttton is-link fa fa-3x fa-microphone"
+                        ></button>
+                      </form>
+                    </span>
+                  </div>
 
-                    <div class="message-body">
-                      <table class="table is-fullwidth">
-                        <tbody class="message-body">
-                          <tr>
-                            <td width="5%"><i class="fa fa-bell-o"></i></td>
-                            <td>Vighnesh Harihar</td>
-                            <td class="level-right">
-
-                              <button class="button is-small is-info">
-                                Show
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </article>
-
-                  <!-- <div class="block">
+                  <div class="block">
                     <div class="card">
                       <div class="card-content">
                         <p class="title is-5">
@@ -132,7 +131,60 @@
                         </p>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
+
+                  <div class="block">
+                    <button class="button is-info is-outlined">Send</button>
+                  </div>
+                </section>
+              </div>
+
+              <!-- for Price prediction -->
+
+              <div class="card events-card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Price Prediction
+                  </p>
+                </header>
+                <section class="section">
+                  <article class="message is-info">
+                    <div class="message-header">
+                      <p>How it works</p>
+                    </div>
+                    <div class="message-body">
+                      Depends Upon your age and BMI(Body Mass Index) it predicts
+                      how much would be charged
+                    </div>
+                  </article>
+
+                  <form method = "POST" action="/patientdashboard2">
+                    <div class="field">
+                      <label class="label">Age</label>
+                      <input
+                        type="number"
+                        name = "Age"
+                        class="input"
+                        placeholder="Enter Your age"
+                      />
+                    </div>
+                    <div class="field">
+                      <label class="label">BMI</label>
+                      <input
+                        type="number"
+                        name = "BMI"
+                        class="input"
+                        placeholder="Enter your BMI"
+                      />
+                    </div>
+                    <div class="block">
+                      <button type = "submit" name = "predictname" class="button is-info is-outlined">Predict</button>
+
+                    </div>
+                  </form>
+                    <div class = 'block'>
+                        <h3 class = "title is-3"> {{ op }} </h3>
+                    </div>
                 </section>
               </div>
             </div>

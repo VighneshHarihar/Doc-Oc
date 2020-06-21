@@ -122,12 +122,7 @@
                     <div class="card">
                       <div class="card-content">
                         <p class="title is-5">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing
-                          elit. Quae, adipisci Lorem ipsum dolor sit amet,
-                          consectetur adipisicing elit. Quae, adipisci Lorem
-                          ipsum dolor sit amet, consectetur adipisicing elit.
-                          Quae, adipisci Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit. Quae, adipisci
+                          Spoken Text comes here.
                         </p>
                       </div>
                     </div>
@@ -158,11 +153,12 @@
                     </div>
                   </article>
 
-                  <form action="">
+                  <form method = "POST" action="/patientdashboard2">
                     <div class="field">
                       <label class="label">Age</label>
                       <input
                         type="number"
+                        name = "Age"
                         class="input"
                         placeholder="Enter Your age"
                       />
@@ -171,12 +167,13 @@
                       <label class="label">BMI</label>
                       <input
                         type="number"
+                        name = "BMI"
                         class="input"
                         placeholder="Enter your BMI"
                       />
                     </div>
                     <div class="block">
-                      <a href="" class="button is-info is-outlined">Predict</a>
+                      <button type = "submit" name = "predictname" class="button is-info is-outlined">Predict</button>
                     </div>
                   </form>
                 </section>

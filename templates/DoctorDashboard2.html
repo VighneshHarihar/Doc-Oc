@@ -87,7 +87,6 @@
             <div class="columns">
                 <div class="column">
                     <!-- for Price prediction -->
-
                     <div class="card events-card">
                         <header class="card-header">
                             <p class="card-header-title">
@@ -100,7 +99,6 @@
                                 <div class="message-header">
                                     <p>New Audio Report</p>
                                 </div>
-
                                 <div class="message-body">
                                     <table class="table is-fullwidth">
                                         <tbody class="message-body">
@@ -108,16 +106,28 @@
                                             <td width="5%"><i class="fa fa-bell-o"></i></td>
                                             <td>Vighnesh Harihar</td>
                                             <td class="level-right">
-                                                <form method="POST" action="/doctordashboard2">
-                                                    <button name = "showQuery" type="submit" class="button is-small is-info">
-                                                        Show
-                                                    </button>
-                                                </form>
+                                                <button class="button is-small is-info">
+                                                    Show
+                                                </button>
+
 
                                             </td>
                                         </tr>
+
+
                                         </tbody>
                                     </table>
+
+                                    <div class="block">
+                                        <div class="card">
+                                            <div class="card-content">
+                                                <p class="title is-5">
+                                                    {{ texting }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </article>
 

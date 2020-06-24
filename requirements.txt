@@ -18,3 +18,4 @@ surprise==0.1
 nltk
 seaborn
 matplotlib
+pywin32
